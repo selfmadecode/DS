@@ -10,6 +10,28 @@ namespace ALGOnDS.DS.BigO
 
         public int MaxValue { get; set; }
 
-        
+        /// <summary>
+        /// Loop through the array and find the min value
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
+        public int FindMinValue(int[] arr)
+        {
+            if(arr.Length < 0)
+            {
+                return int.MinValue;
+            }
+
+            MinValue = arr[0]; // Assign the first element to be the min value
+
+            // if the element at index i is less that the Minimum value, replace the value
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if(arr[i] < MinValue)
+                    MinValue = arr[i];
+            }
+
+            return MinValue;
+        }        
     }
 }
