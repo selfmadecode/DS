@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ALGOnDS.DS.BigO
 {
-    public class OofN
+    public class LinearSearch
     {
         // O(1)
         // The Runtime complexity of this method is 0(1) because it
@@ -58,5 +58,32 @@ namespace ALGOnDS.DS.BigO
 
             return -1;
         }
+
+        public bool WordContainsCharacter(string word, char character)
+        {
+            foreach(char ch in word)
+            {
+                return ch == character;
+            }
+
+
+            for(int i =0; i <= word.Length; i++)
+            {
+                return word[i] == character;
+            }
+
+            return false;
+        }
+
+        public bool FindBetween(int[] arr, int num, int start, int end)
+        {
+            for (int i = start; i <= end; i++)
+            {
+                return arr[i] == num;
+            }
+
+            return false;
+        }
+
     }
 }
