@@ -1,14 +1,10 @@
 ﻿using ALGOnDS.DS;
-using ALGOnDS.Excercise;
 using ALGOnDS.Excercise.Sorting;
-using ALGOnDS.Generics;
-using ALGOnDS.LINQ;
 using ALGOnDS.Timing;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace ALGOnDS
 {
