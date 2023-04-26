@@ -14,7 +14,7 @@ namespace ALGOnDS.DS.BigO
         /// Loop through the array and find the min value
         /// </summary>
         /// <param name="arr"></param>
-        /// <returns></returns>
+        /// <returns>Minimum value in an array </returns>
         public int FindMinValue(int[] arr)
         {
             if(arr.Length < 0)
@@ -38,7 +38,7 @@ namespace ALGOnDS.DS.BigO
         /// Loop through an array and find the max value
         /// </summary>
         /// <param name="arr"></param>
-        /// <returns></returns>
+        /// <returns> max value in an array</returns>
         public int FindMaxValue(int[] arr)
         {
             if (arr.Length < 0)
