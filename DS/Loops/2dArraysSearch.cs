@@ -18,9 +18,10 @@ namespace ALGOnDS.DS
 
         public int FindMaxNumberInTwoDArray(int[,] numbers)
         {
-            var maxVal = 0;
+            //var maxVal = 0; // wrong, arrays can have negative values
+            var maxVal = int.MinValue;
 
-            for(int row = 0; row < numbers.GetLength(0); row++) // numbers.GetLength(0) - gives the number of rows in a 2D array
+            for (int row = 0; row < numbers.GetLength(0); row++) // numbers.GetLength(0) - gives the number of rows in a 2D array
             {
                 for(int col = 0;  col < numbers.GetLength(1);   col++) //numbers.GetLength(1) - gives the number of elements in the row
                 {
