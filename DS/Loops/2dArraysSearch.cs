@@ -4,7 +4,13 @@ using System.Text;
 
 namespace ALGOnDS.DS
 {
-    class _2dArraysSearch
+    class TwoDArraysSearch
     {
+        public int FindMaxNumberInTwoDArray(int[][] arr)
+        {
+            var maxVal = 0;
+
+            return maxVal;
+        }
     }
 }
